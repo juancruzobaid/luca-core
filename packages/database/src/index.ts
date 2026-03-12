@@ -1,3 +1,5 @@
 // @luca-core/database
-// Placeholder — implementación en fases siguientes
-export const placeholder = true;
+// Public — auditable schema for LucaVault
+
+export * from './schema'
+export * from './types'
