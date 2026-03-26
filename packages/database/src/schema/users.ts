@@ -29,6 +29,9 @@ export const sessions = sqliteTable('sessions', {
   userId: text('user_id').notNull().references(() => users.id),
   expiresAt: integer('expires_at').notNull(), // Unix timestamp
   createdAt: text('created_at').notNull(),
+  userAgent: text('user_agent'),
+  ipAddress: text('ip_address'),
+  lastUsedAt: text('last_used_at'),
 })
 
 export const magicLinks = sqliteTable('magic_links', {
